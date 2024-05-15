@@ -1,0 +1,15 @@
+.container{
+    display:flex;
+    padding:24px 0;
+    width:1200px;
+    margin:0 auto; //水平居中
+}
+
+.left{
+    width:120px;
+}
+
+.right{
+    flex:1;
+    margin-left:60px;
+}

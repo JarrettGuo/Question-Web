@@ -1,0 +1,20 @@
+.container{
+    height: calc(100vh - 64px - 65px);
+    display:flex;
+    //设置主轴方向为竖直方向
+    flex-direction: column;
+    //设置水平居中
+    justify-content: center;
+    //设置垂直居中
+    align-items: center;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    
+    .info{
+        text-align: center;
+
+        button{
+            height: 60px;
+            font-size: 24px;
+        }
+    }
+}

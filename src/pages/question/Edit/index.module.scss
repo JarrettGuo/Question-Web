@@ -1,0 +1,49 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.content-wrapper{
+    flex:auto;
+    padding:12px 0;
+}
+
+.content{
+    margin:20px 24px;
+    display:flex;
+    height:97%;
+
+    .left{
+        width:295px;
+        background-color: #fff;
+        padding:0 12px
+    }
+
+    .main{
+        flex:1;
+        position:relative;
+        //最外层不允许滚动
+        overflow: hidden;
+
+        .canvas-wrapper{
+            // 为了让canvas居中 且不会被撑开 用绝对定位 且父元素设置相对定位
+            position:absolute;
+            width:400px;
+            height:712px;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            //内层滚动
+            overflow:auto;
+            box-shadow: 0 2px 10px #0000001f;
+        }
+    }
+
+    .right{
+        width:300px;
+        background-color: #fff;
+        padding:0 12px;
+    }
+}
